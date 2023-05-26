@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Cálculadora</title>
 </head>
-<body class="row justify-content-center">
+<body class="row justify-content-center" onload="init();">
 <div class="container mt-4">
     <div class="container text-center">
         <div class="row justify-content-md-center">
@@ -82,10 +82,10 @@
 
         <div class="row justify-content-md-center mt-1">
             <div class="col col-3 bg-secondary border border-white rounded center">
-                <span class="text-white btn" onclick="tecla1(event)">Enter</span>
+                <span class="text-white btn" onclick="enter()">Enter</span>
             </div>
             <div class="col col-1 bg-info border border-white rounded text-white center">
-                <span class="text-white btn" onclick="tecla1(event)">C</span>
+                <span id="reset" class="text-white btn" onclick="reset()">C</span>
             </div>
         </div>
     </div>
